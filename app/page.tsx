@@ -1,3 +1,11 @@
-export default function Home() {
-	return <h1 className="text-red-900">hello from home page</h1>
+import Content from "../components/Content"
+
+export default function Page() {
+  return (
+    <>
+      <div className="max-w-5xl mx-auto">
+        <Content />
+      </div>
+    </>
+  )
 }

@@ -1,18 +1,22 @@
-import "../styles/globals.css"
+import Header from "../components/Header"
+import Providers from "./providers"
+
+import "tailwindcss/tailwind.css"
 
 export default function RootLayout({
-	children,
+  children,
 }: {
-	children: React.ReactNode
+  children: React.ReactNode
 }) {
-	return (
-		<html>
-			<head />
-			<body>
-				<main>
-					{children}
-				</main>
-			</body>
-		</html>
-	)
+  return (
+    <html>
+      <head />
+      <body>
+        <Providers>
+          <Header />
+          <main>{children}</main>
+        </Providers>
+      </body>
+    </html>
+  )
 }

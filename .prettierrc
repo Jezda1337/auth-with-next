@@ -1,5 +1,5 @@
 {
 	"semi": false,
-	"trailingComma": "es2020",
+	"trailingComma": "all",
 	"bracketSameLin": true
 }
